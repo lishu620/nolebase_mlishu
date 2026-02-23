@@ -1,3 +1,8 @@
+---
+tags:
+  - 云计算
+comment: false
+---
 ## 准备操作
 ### 卸载swap分区
 Kubernetes 的机器不能有 swap 分区，所以要卸载 swap 分区。
