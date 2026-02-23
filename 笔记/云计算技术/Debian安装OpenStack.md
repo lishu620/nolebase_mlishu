@@ -44,7 +44,7 @@ pool node01 iburst
 sudo systemctl restart chrony
 ```
 成功截图
-![[Pasted image 20260120142025.png]]
+![Pasted image 20260120142025](assets/Pasted%20image%2020260120142025.webp)
 ### 添加OpenStack官方源
 安装必要的依赖工具
 ```
@@ -99,7 +99,7 @@ sudo rabbitmqctl set_permissions openstack ".*" ".*" ".*"
 ```
 sudo rabbitmqctl list_users
 ```
-![[Pasted image 20260120143540.png]]
+![Pasted image 20260120143540](assets/Pasted%20image%2020260120143540.webp)
 ### 安装Memcached
 ```
 sudo apt install -y memcached python3-memcache

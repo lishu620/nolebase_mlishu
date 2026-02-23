@@ -92,7 +92,7 @@ kubeadm version
 kubelet --version
 kubectl version
 ```
-![[Pasted image 20260120170936.png]]
+![Pasted image 20260120170936](assets/Pasted%20image%2020260120170936.webp)
 ## 拉取K8S镜像
 ```
 kubeadm config images pull --image-repository registry.aliyuncs.com/google_containers
@@ -101,7 +101,7 @@ kubeadm config images pull --image-repository registry.aliyuncs.com/google_conta
 ```
 crictl images
 ```
-![[Pasted image 20260120171605.png]]
+![Pasted image 20260120171605](assets/Pasted%20image%2020260120171605.webp)
 ## 部署Master节点
 使用 kubeadm 初始化 master 节点或首节点。
 - 不要在非 master 节点上运行 `kubeadm init`，如果在非 master 节点上运行了 `kubeadm init`，它会尝试初始化该节点为一个新的控制平面节点，导致该节点不能正常加入现有集群。
@@ -115,9 +115,9 @@ crictl images
 kubeadm init --image-repository registry.aliyuncs.com/google_containers
 ```
 出现这个绿色的就表示初始化完成
-![[Pasted image 20260120171950.png]]
+![Pasted image 20260120171950](assets/Pasted%20image%2020260120171950.webp)
 查看服务运行状态
-![[Pasted image 20260120172111.png]]
+![Pasted image 20260120172111](assets/Pasted%20image%2020260120172111.webp)
 按上2图执行如下命令
 ```
 mkdir -p $HOME/.kube 
@@ -129,35 +129,35 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
 kubectl get nodes
 ```
-![[Pasted image 20260120200804.png]]
+![Pasted image 20260120200804](assets/Pasted%20image%2020260120200804.webp)
 查看集群状态
 ```
 kubectl get cs
 ```
-![[Pasted image 20260120200832.png]]
+![Pasted image 20260120200832](assets/Pasted%20image%2020260120200832.webp)
 ## 部署worker节点
 获取新的certificate-key
 ```
 kubeadm init phase upload-certs --upload-certs
 ```
-![[Pasted image 20260120202016.png]]
+![Pasted image 20260120202016](assets/Pasted%20image%2020260120202016.webp)
 获取添加worker节点的命令
 ```
 kubeadm token create --print-join-command
 ```
-![[Pasted image 20260120202818.png]]
+![Pasted image 20260120202818](assets/Pasted%20image%2020260120202818.webp)
 记住这个密钥
 ```
 kubeadm join 192.168.85.21:6443 --token 8zrdlu.3yk0pkfiuvt9iooh --discovery-token-ca-cert-hash sha256:7715d5c0a719b5e39d35565d804f6ea855e78a7addf0afe0f902614c72e00e98
 ```
 将该密钥输入到需要加入集群的主机中
-![[Pasted image 20260120204631.png]]
+![Pasted image 20260120204631](assets/Pasted%20image%2020260120204631.webp)
 让worker节点可以查询
 ```
 mkdir ~/.kube && cp /etc/kubernetes/kubelet.conf ~/.kube/config
 ```
 查看加入的节点
-![[Pasted image 20260120204622.png]]
+![Pasted image 20260120204622](assets/Pasted%20image%2020260120204622.webp)
 现在有了 master 和 node 节点，但是所有节点状态都是 `NotReady`，这是因为没有CNI网络插件
 ## 安装CNI网络插件
 **安装 CNI 网络插件在所有节点机器执行。**
