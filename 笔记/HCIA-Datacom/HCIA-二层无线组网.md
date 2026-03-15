@@ -5,7 +5,7 @@ comment: false
 ---
 # 二层无线组网
 ## 拓扑图
-![547](Pasted%20image%2020260312162709.png)
+![547](./assets/Pasted%20image%2020260312162709.png)
 ## 配置说明
 掌握认证AP上线配置；无线配置模板；WLAN配置基本流程，
 AC处于旁挂与AP处于二层，AC作为DHCP为AP服务，
@@ -95,7 +95,7 @@ ap-name ap1
 ap-group ap-group1
 ```
 输入Y确认
-![](Pasted%20image%2020260313083529.png)
+![](./assets/Pasted%20image%2020260313083529.png)
 #### 模板
 创建安全模板
 ```
@@ -125,7 +125,7 @@ ap-group name ap-group1
 vap-profile HCIA wlan 1 radio all
 ```
 结果如下图
-![](Pasted%20image%2020260313084328.png)
+![](./assets/Pasted%20image%2020260313084328.png)
 
 ### 数据业务
 LSW1
