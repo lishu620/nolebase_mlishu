@@ -1,6 +1,7 @@
 ---
 tags:
   - HCIA-Datacom
+comment: false
 ---
 # 二层无线组网
 ## 拓扑图
