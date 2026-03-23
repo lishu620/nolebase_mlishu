@@ -1,7 +1,7 @@
 ---
 tags:
   - HCIA-Datacom
-comment:
+comment: false
 ---
 # HCIA-三层无线组网
 ## 拓扑图
