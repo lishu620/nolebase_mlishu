@@ -12,14 +12,14 @@ docker run -d --name adguardhome -v /opt/adguardhome/work:/opt/adguardhome/work 
 ```
 
 访问网页：localhost:3000
-![[Pasted image 20251014164415.png]]
+![](附件/图片/Pasted image 20251014164415.png)
 
 
 如图配置，主要是网页管理端口改成3000
-![[Pasted image 20251014164444.png]]
+![](附件/图片/Pasted image 20251014164444.png)
 
 配置密码
-![[Pasted image 20251014164518.png]]
+![](附件/图片/Pasted image 20251014164518.png)
 
 
 

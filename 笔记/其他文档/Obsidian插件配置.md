@@ -1,7 +1,7 @@
 先附上本文中推荐的插件清单：
 
 [[其他文档/assets/6e0477fda47d45111ccbdfb365e0e741_MD5.jpeg|Open: Pasted image 20250820100540.png]]
-![[其他文档/assets/6e0477fda47d45111ccbdfb365e0e741_MD5.jpeg]]
+![](附件/图片/其他文档/assets/6e0477fda47d45111ccbdfb365e0e741_MD5.jpeg)
 
 以下，逐一介绍每一款插件——
 
@@ -12,7 +12,7 @@
 安装之后，你需要先在设置中，选择一个图标包：
 
 [[其他文档/assets/7d3445713eab360cbf566f5a3a3ef383_MD5.jpeg|Open: Pasted image 20250820100859.png]]
-![[其他文档/assets/7d3445713eab360cbf566f5a3a3ef383_MD5.jpeg]]
+![](附件/图片/其他文档/assets/7d3445713eab360cbf566f5a3a3ef383_MD5.jpeg)
 
 所有的图标包，都会保存在 `.obsidian/icons` 文件夹下。
 

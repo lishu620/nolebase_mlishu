@@ -174,9 +174,9 @@ CPU 把指令执行权限分成了 4 个环（Ring 0~Ring 3），权限从内到
 ---
 
 
-![[Pasted image 20260521082627.png]]
+![](附件/图片/Pasted image 20260521082627.png)
 
-![[Pasted image 20260521102315.png]]
+![](附件/图片/Pasted image 20260521102315.png)
 
 
 

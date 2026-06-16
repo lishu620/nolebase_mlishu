@@ -54,7 +54,7 @@ server controller inbrust
 sudo service chrony restart
 ```
 
-![](assets/Pasted%20image%2020260512094815.png)
+![](附件/图片/HCIP-云计算/assets/Pasted%20image%2020260512094815.png)
 
 ### 适用于Ubuntu的OpenStack
 
